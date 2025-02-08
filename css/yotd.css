@@ -1,0 +1,396 @@
+
+
+@font-face {
+  font-family: "hl2";
+  src: url("../fonts/halflife2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lithos";
+  src: url("../fonts/LithosPro.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../fonts/JosefinSansLight.ttf") format("truetype");
+}
+
+.container-background{
+	background-image: url("../media/hlyotd/bg-middle.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-attachment: local;
+	width:806px;
+}
+
+.container{
+	overflow: hidden;
+	width:800px;
+	white-space: nowrap;
+	margin:auto;
+	text-align:center;
+}
+
+.container-margin{
+	margin-left:10px;
+	margin-top:25px;
+}
+
+.container-blur{
+	z-index:-1;
+	margin-left:-195px;
+	margin-top:-85px;
+}
+
+h1-body-header{
+	font-family:"lithos";
+	font-size:34px;
+	background: -webkit-linear-gradient(#ffef01, #eb5026);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #4C1818;
+	margin-left:-4px;
+}
+
+h1{
+	font-family:"hl2";
+	font-size:60px;
+	font-weight: normal;
+	color:white; /*color:#f3ae00;*/
+	line-height: 5px;
+	margin-top:55px;
+}
+
+h1-blur{
+	font-family:"hl2";
+	font-size:100px;
+	font-weight: normal;
+	letter-spacing: 10px;
+	color: transparent;
+	text-shadow: 0 0 20px white;
+}
+
+yotd-large{
+	font-family:"lithos";
+	font-size:30px;
+	font-weight: normal;
+	color:#8429ff;
+	line-height: 5px;
+	letter-spacing: 10px;
+}
+
+yotd-small{
+	font-family:"lithos";
+	font-size:20px;
+	font-weight: normal;
+	color:#8429ff;
+	line-height: 5px;
+	letter-spacing: 10px;
+}
+
+h3{
+	font-family:"Trebuchet MS";
+	font-size:24px;
+	font-weight:bold;
+	color:#8429ff;
+	letter-spacing: 10px;
+}
+
+body{
+	background-color:#080808;
+	font-family:"JosefinSans";
+	color:#ffffff;
+	font-size:18px;
+}
+
+hr{
+	border: 1px solid white;
+}
+
+p.large{
+	font-weight:900;
+	font-size:25px;
+	line-height:35px;
+}
+
+p.light{
+	font-weight:400;
+	font-size:20px;
+	line-height:25px;
+	margin-top:2px;
+}
+
+li.light{
+	margin-left:-25px;
+	font-weight:100;
+	font-size:20px;
+	line-height:30px;
+}
+
+ul.light{
+	margin-top:-0px;
+}
+
+p.large-qa{
+	font-weight:900;
+	font-size:22px;
+	line-height:35px;
+	color:#8557d5;
+	margin-bottom:-15px;
+}
+
+p.light-qa{
+	font-weight:400;
+	font-size:20px;
+	line-height:25px;
+	font-style: italic;
+	text-indent: 25px;
+	margin-bottom:40px;
+}
+
+
+footer{
+	overflow: hidden;
+	width:800px;
+	margin:auto;
+	text-align:center;
+	white-space:normal;
+	
+	font-family:"arial";
+	font-weight:100;
+	font-size:12px;
+	color:#4f4f4f;
+}
+
+ul.navbar{
+	font-family:"Trebuchet MS";
+	text-align:center;
+	padding:0;
+	padding-left:30px;
+	list-style:none;
+	/*background:#212121;*/
+	border-radius:10px;
+	border:2px solid #f3ae00;
+	white-space:nowrap;
+	
+	background: rgba(33, 33, 33, 0.5)
+}
+
+ul.navbar li{
+	padding-right:35px;
+	display:inline-block;
+	position:relative;
+	line-height:21px;
+	text-align:center
+}
+
+ul.navbar li a{
+	display:block;
+	padding:8px 25px;
+	color:#F0B43F;
+	text-decoration:none
+}
+
+ul.navbar li a:hover{
+	color:#ffd300;
+	text-shadow: 0 0 8px #f0b43f;
+	/*background:#181818;
+	border-radius:10px;*/
+}
+
+ul.navbar li:hover ul.dropdown{
+	display:block
+}
+
+ul.navbar li ul.dropdown{
+	display:none;
+	list-style:none;
+	padding:0;
+	/*min-width:125px;*/
+	/*background:#212121;*/
+	position:absolute;
+	z-index:1;
+	margin-left:-25px;
+	text-align:center;
+	width:100%;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border-left: 2px solid #f3ae00;
+	border-right: 2px solid #f3ae00;
+	border-bottom: 2px solid #f3ae00;
+	
+	background: rgba(19, 19, 19, 1.0)
+}
+
+ul.navbar li ul.dropdown li{
+	display:block;
+}
+
+.window-column{
+	min-width:780px;
+	max-width:780px;
+	margin: auto;
+}
+
+.window-row{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:stretch;
+	max-width:780px;
+}
+
+.window{
+	position:static;
+	border: 2px solid #8429ff;
+	background-color:#212121;
+	padding:25px;
+	box-sizing:border-box;
+	margin: auto;
+	min-width:780px;
+	max-width:780px;
+	border-radius:10px;
+	background-image: url("../media/hlyotd/bg-body.png");
+}
+
+.table-align-left{
+	width: 100%;
+	text-align: left;
+}
+
+/*.float-left{float:left;margin-right:16px}.float-right{float:right;margin-left:16px}*/
+
+html {
+	max-width: 800px;
+	overflow: auto;
+	scroll-behavior:smooth;
+	/*min-height: 2000px;*/
+	margin: auto;	
+}
+
+body {
+	margin: auto;
+	width:800px;
+}
+
+footer
+{
+	z-index:-1;
+    position:local;
+    bottom:0;
+}
+
+img.download{
+	margin-left:-3px;
+	border: 2px solid #f3ae00;
+	border-radius:5px;
+}
+
+a:hover img.download{
+	box-shadow: 0px 0px 10px #f0b43f;
+}
+
+img.media{
+	width:220px;
+	margin:5px;
+	border: 2px solid #f3ae00;
+	border-radius:5px;
+}
+
+/*movement effect on header*/
+.animmove{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+  
+	position: relative;
+	animation-name: moveleftright;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes moveleftright{
+	0%   {left:-25px; top:0px;}
+	35%  {left:30px; top:0px;}
+	45%  {left:-10px; top:0px;}
+	65%  {left:25px; top:0px;}
+	80%  {left:-30px; top:0px;}
+	90%  {left:30px; top:0px;}
+	100% {left:-25px; top:0px;}
+}
+
+
+/*flashing effect on header*/
+.animflash{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+  
+	animation-name: flashing;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start;
+}
+
+@keyframes flashing{
+	14%   {text-shadow: 0 0 0px transparent}
+	15%   {text-shadow: 0 0 10px white}
+	17%   {text-shadow: 0 0 0px transparent}
+  
+	32%   {text-shadow: 0 0 0px transparent}
+	33%   {text-shadow: 0 0 10px white}
+	35%   {text-shadow: 0 0 0px transparent}
+  
+	64%   {text-shadow: 0 0 0px transparent}
+	65%   {text-shadow: 0 0 10px white}
+	67%   {text-shadow: 0 0 0px transparent}
+  
+	80%   {text-shadow: 0 0 0px transparent}
+	81%   {text-shadow: 0 0 15px white}
+	83%   {text-shadow: 0 0 0px transparent}
+}
+
+
+/*blur moving effect*/
+.animmove-blur{
+	position: relative;
+	animation-name: moveleftrightblur;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes moveleftrightblur{
+	0%   {left:-25px; top:0px;}
+	35%  {left:30px; top:0px;}
+	45%  {left:-10px; top:0px;}
+	65%  {left:25px; top:0px;}
+	80%  {left:-30px; top:0px;}
+	90%  {left:30px; top:0px;}
+	100% {left:-25px; top:0px;}
+}
+
+
+/*carousel*/
+.mySlides{
+	position: relative;
+	animation-name: swipping;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes swipping{
+	0%		{left:780px; opacity:0;}
+	5%		{left:0px; opacity:1;}
+	
+	95%		{right:0; opacity:1;}
+	100%	{right:780px; opacity:0;}
+}
