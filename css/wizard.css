@@ -1,4 +1,55 @@
 
+@font-face {
+  font-family: "wizard";
+  src: url("../fonts/Wizard.ttf") format("truetype");
+}
+
+.container-background{
+	background-image: url("../media/wizardzone/background.png");
+	background-position: top center;
+	background-repeat: repeat-y;
+	background-color: black;
+	background-attachment: local;
+	width:806px;
+}
+
+.container{
+	overflow: hidden;
+	width:800px;
+	white-space: nowrap;
+	margin:auto;
+	text-align:center;
+	min-height:148px;
+	max-height:148px;
+}
+
+h1{
+	font-family:"wizard";
+	font-size:40px;
+	font-weight: normal;
+	letter-spacing: -15px;
+	color:gold; /*color:#f3ae00;*/
+	line-height: 5px;
+	margin-top:85px;
+}
+
+body{
+	background-color:#080808;
+	font-family:"wizard";
+	color:#ffffff;
+	font-size:13px;
+}
+
+hr{
+	border: 1px solid white;
+}
+
+p.large{
+	font-weight:900;
+	font-size:20px;
+	line-height:35px;
+	letter-spacing: 2px;
+}
 
 footer{
 	overflow: hidden;
@@ -29,22 +80,20 @@ footer{
 
 .window{
 	position:static;
-	border: 2px solid #8429ff;
-	background-color:#212121;
 	padding:25px;
 	box-sizing:border-box;
 	margin: auto;
 	min-width:780px;
 	max-width:780px;
-	border-radius:10px;
+	
+	min-height:640px;
+	max-height:640px;
 }
 
 .table-align-left{
 	width: 100%;
 	text-align: left;
 }
-
-/*.float-left{float:left;margin-right:16px}.float-right{float:right;margin-left:16px}*/
 
 html {
 	max-width: 800px;
@@ -64,4 +113,141 @@ footer
 	z-index:-1;
     position:local;
     bottom:0;
+}
+
+img.download{
+	margin-left:-3px;
+	border: 2px solid #f3ae00;
+	border-radius:5px;
+}
+
+a:hover img.download{
+	box-shadow: 0px 0px 10px #f0b43f;
+}
+
+img.media{
+	width:220px;
+	margin:5px;
+	border: 2px solid #f3ae00;
+	border-radius:5px;
+}
+
+/*movement effect on header*/
+.animmove{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+  
+	position: relative;
+	animation-name: moveleftright;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes moveleftright{
+	0%   {left:-25px; top:0px;}
+	35%  {left:30px; top:0px;}
+	45%  {left:-10px; top:0px;}
+	65%  {left:25px; top:0px;}
+	80%  {left:-30px; top:0px;}
+	90%  {left:30px; top:0px;}
+	100% {left:-25px; top:0px;}
+}
+
+/*wavy ass mans*/
+.wavy  span{
+  animation: wavy 1s ease-in-out infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.wavy span:nth-child(1) {
+	animation-delay: 0s;
+}
+.wavy span:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.wavy span:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+.wavy span:nth-child(4) {
+	animation-delay: 0.6s;
+}
+.wavy span:nth-child(5) {
+	animation-delay: 0.8s;
+}
+.wavy span:nth-child(6) {
+	animation-delay: 1.0s;
+}
+.wavy span:nth-child(7) {
+	animation-delay: 1.2s;
+}
+.wavy span:nth-child(8) {
+	animation-delay: 1.4s;
+}
+.wavy span:nth-child(9) {
+	animation-delay: 1.6s;
+}
+
+.wavy span:nth-child(10) {
+	animation-delay: 1.8s;
+}
+.wavy span:nth-child(11) {
+	animation-delay: 2.0s;
+}
+.wavy span:nth-child(12) {
+	animation-delay: 2.2s;
+}
+.wavy span:nth-child(13) {
+	animation-delay: 2.4s;
+}
+
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+
+/*flashing effect on header*/
+.animflash{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+  
+	animation-name: flashing;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start;
+}
+
+@keyframes flashing{
+	14%   {text-shadow: 0 0 0px transparent}
+	15%   {text-shadow: 0 0 10px white}
+	17%   {text-shadow: 0 0 0px transparent}
+  
+	32%   {text-shadow: 0 0 0px transparent}
+	33%   {text-shadow: 0 0 10px white}
+	35%   {text-shadow: 0 0 0px transparent}
+  
+	64%   {text-shadow: 0 0 0px transparent}
+	65%   {text-shadow: 0 0 10px white}
+	67%   {text-shadow: 0 0 0px transparent}
+  
+	80%   {text-shadow: 0 0 0px transparent}
+	81%   {text-shadow: 0 0 15px white}
+	83%   {text-shadow: 0 0 0px transparent}
 }
